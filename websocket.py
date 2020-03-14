@@ -12,12 +12,7 @@ async def hello(websocket, path):
     while True:
         for msg in consumer:
             await websocket.send(str(msg.value))
-            print (f"> {msg.value}")
             print (msg.value)
-    #name = await websocket.recv()
-    #print(f"< {name}")
-
-    #reeting = f"Hello {name}!"
 
 start_server = websockets.serve(hello, "localhost", 8765)
 
