@@ -1,0 +1,16 @@
+body {
+    padding-top: 5rem;
+}
+.starter-template {
+    padding: 3rem 1.5rem;
+    text-align: center;
+}
+.my-custom-scrollbar {
+  position: relative;
+  height: 1000px;
+  overflow: auto;
+}
+.table-wrapper-scroll-y {
+  display: block;
+  text-align: initial;
+}

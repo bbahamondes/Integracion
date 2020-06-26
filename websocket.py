@@ -1,3 +1,4 @@
+#!/bin/python3
 import asyncio
 import websockets
 from kafka import KafkaConsumer
@@ -11,8 +12,8 @@ consumer = KafkaConsumer("logs",
 async def hello(websocket, path):
     while True:
         for msg in consumer:
-            await websocket.send(str(msg.value))
-            print (msg.value)
+            await websocket.send(msg.value.decode('utf-8'))
+            print (msg.value.decode('utf-8'))
 
 start_server = websockets.serve(hello, "localhost", 8765)
 
