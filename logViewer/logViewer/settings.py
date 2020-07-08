@@ -26,7 +26,7 @@ SECRET_KEY = 'd^la76-6ozg$+r6er&9631cwx5el&z7k2nx78bi0q*tx(p#nk#'
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
+LOGIN_REDIRECT_URL = '/web/index'
 
 # Application definition
 

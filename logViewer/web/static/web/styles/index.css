@@ -5,7 +5,7 @@ body {
     padding: 3rem 1.5rem;
     text-align: center;
 }
-.my-custom-scrollbar {
+/*.my-custom-scrollbar {
   position: relative;
   height: 1000px;
   overflow: auto;
@@ -13,4 +13,4 @@ body {
 .table-wrapper-scroll-y {
   display: block;
   text-align: initial;
-}
+}*/
